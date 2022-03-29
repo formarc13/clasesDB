@@ -1,0 +1,253 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --grey: #444444;
+    --red: #b92519;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    background-image: url('/images/bg-body.png');
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 15px 10px 0;
+}
+
+/* HEADER */
+
+header.main-header {
+    max-width: 380px;
+    margin: 0 auto 20px;
+}
+
+header.main-header .logo {
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    display: block;
+}
+
+header.main-header .toggle-nav {
+    display: block;
+    background-color: var(--grey);
+    border-radius: 2px;
+    color: white;
+    margin: 0 auto 15px;
+    padding: 5px;
+    width: fit-content;
+}
+
+header.main-header .main-nav ul li {
+    background-color: var(--grey);
+    margin-bottom: 1px;
+    padding: 5px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* END HEADER */
+
+/* BANNER */
+
+.banner {
+    display: none;
+}
+
+/* END BANNER */
+
+/* PRODUCTS */
+
+section.vip-products article.product {
+    max-width: 380px;
+    margin: 0 auto 30px;
+}
+
+section.vip-products article.product .photo-container {
+    position: relative;
+}
+
+section.vip-products article.product .photo-container img.special {
+    position: absolute;
+    top: 0;
+    right: 10px;
+}
+
+section.vip-products article.product .photo-container img.photo {
+    width: 100%;
+}
+
+section.vip-products article.product .photo-container a.zoom {
+    position: absolute;
+    left: 0;
+    top: 46%;
+    background: rgba(0,0,0,0.5);
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+    padding: 5px;
+}
+
+section.vip-products article.product h2 {
+    margin: 15px 0;
+    font-size: 1.3rem;
+}
+
+section.vip-products article.product p {
+    color: var(--grey);
+}
+
+section.vip-products article.product a.more {
+    background-color: var(--grey);
+    display: inline-block;
+    padding: 7px 10px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+/* END PRODUCTS */
+
+/* FOOTER */
+
+footer.main-footer ul li {
+    background-color: var(--red);
+    margin-bottom: 1px;
+    padding: 5px;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+/* END FOOTER */
+
+/* MEDIA QUERIES */
+/* Tablet */
+
+@media (min-width: 768px) {
+
+/* HEADER */
+
+header.main-header {
+    max-width: 100%;
+    text-align: center;
+}
+
+header.main-header .toggle-nav {
+    display: none;
+}
+
+header.main-header .main-nav ul li {
+    margin-bottom: 0px;
+    padding: 7px;
+    display: inline-block;
+    font-size: 14px;
+    margin-right: 9.5px;
+    width: 113px;
+} 
+
+header.main-header .main-nav ul li:last-child {
+    margin-right: 0;
+}
+
+/* END HEADER */
+
+/* BANNER */
+
+.banner {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.banner img {
+    width: 100%;
+}
+
+/* END BANNER */
+
+/* PRODUCTS */
+
+section.vip-products article.product {
+    width: 49.7%;
+    display: inline-block;
+}
+
+/* END PRODUCTS */
+   
+}
+
+/* End Tablet Media Queries */
+
+/* Desktop Media Querie */
+
+@media (min-width: 1200px){
+    div.container {
+        max-width: 1180px;
+        margin: 0 auto;
+    }
+/* HEADER */
+    header.main-header .logo {
+        width: 180px;
+        margin: 0 auto 30px;
+    }
+
+    header.main-header .main-nav ul li {
+        padding: 13px;
+        font-size: 17px;
+        margin-right: 15px;
+        width: 180px;
+        height: 50px;
+    } 
+
+/* END HEADER */
+
+/* PRODUCTS */
+
+section.vip-products article.product {
+   margin-right: 15px;
+}
+
+section.vip-products article.product:nth-child(3n) {
+    margin-right: 0;
+}
+
+/* END PRODUCTS */
+
+/* FOOTER */
+
+footer.main-footer {
+    background-color: var(--red);
+    border-radius: 30px 30px 0 0;
+    height: 10rem;
+    padding-top: 4rem;
+}
+
+footer.main-footer ul {
+    text-align: center;
+}
+
+footer.main-footer ul li {
+    margin-bottom: 0px;
+    padding: 5px 12px;
+    display: inline-block;
+    font-size: 18px;
+    border-right: 1px solid white;
+}
+
+footer.main-footer ul li:last-child {
+    border-right: none;
+}
+
+/* END FOOTER */
+
+}
+
+/* END Desktop Media Querie */
